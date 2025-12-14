@@ -40,7 +40,7 @@ useEffect(()=>{
 const deleteNote=   async (note_id)=>{
   setDeletingID(note_id)
   try {
-    await axios.delete(`http://localhost:5000/api/notes/${note_id} `)
+    await axios.delete(`https://note-app-backend-dced.onrender.com/api/notes/${note_id} `)
     setNotes((prevNotes) => prevNotes.filter((n) => n._id !== note_id));
     toast.success("Note deleted Successfully ")
 

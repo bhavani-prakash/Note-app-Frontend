@@ -16,7 +16,7 @@ const Home = () => {
 useEffect(()=>{
   const fetchNotes =async ()=>{
     try {
-      const res = await axios.get("http://localhost:5000/api/notes/");
+      const res = await axios.get("https://note-app-backend-dced.onrender.com/api/notes/");
       console.log(res.data)
       setNotes(res.data) 
       setIsrateLimited(false)

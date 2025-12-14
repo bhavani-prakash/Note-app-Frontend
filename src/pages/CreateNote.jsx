@@ -24,7 +24,7 @@ const CreateNote = () => {
 
     setLoading(true)
     try {
-      await axios.post("http://localhost:5000/api/notes" , {
+      await axios.post("https://note-app-backend-dced.onrender.com/api/notes" , {
         title,
         content
       })

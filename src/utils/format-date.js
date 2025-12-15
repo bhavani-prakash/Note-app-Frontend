@@ -1,6 +1,6 @@
 export function formatDate(isoString) {
   return new Date(isoString).toLocaleString("en-US", {
-    month: "long",
+    month: "short",
     day: "numeric",
     year: "numeric",
     hour: "numeric",

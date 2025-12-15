@@ -28,11 +28,10 @@ const CreateNote = () => {
         title,
         content
       })
+
       Navigate('/')
-      
-      toast.success("Note created succesfully ")
-      
-     
+      toast.success(" Note created Successfully !")
+
     } catch (error) {
       toast.error(" ! Error ")
       console.log(error)
@@ -42,13 +41,13 @@ const CreateNote = () => {
       setLoading(false)
     }
 
-    
-
+  
   }
 
 
   return (
     <div>
+      
       <div className='creat-note-div'>
       
        <form onSubmit={pushDataToDB} className='create-note-form'>

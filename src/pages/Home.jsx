@@ -59,7 +59,7 @@ const deleteNote=   async (note_id)=>{
 
     {isRateLimited && <p> Too many requests ! please try again later </p>}
 
-    {loading && <h1 className='loading'> <LucideLoaderCircle> </LucideLoaderCircle> Loading ....</h1>}
+    {loading && <h1 className='loading'> <Loader className='loader-icon' size={32}/> Getting Notes..</h1>}
     {notes.length >0 && !isRateLimited && (<div className='notes-parent'> 
       {notes.map((note) =>(
         <div   key={note._id}>

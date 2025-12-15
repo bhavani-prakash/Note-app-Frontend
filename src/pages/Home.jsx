@@ -70,7 +70,7 @@ const deleteNote=   async (note_id)=>{
           <p className='note-content'>{note.content}</p>
 
           <div className='created-at'>
-             <div className='date'> <div>{formatDate(note.createdAt)} </div>  <div>{ deletingID === note._id ? (<Loader className='loader-icon' />) : (<span className='trash-icon' onClick={()=>{deleteNote(note._id)}}> <Trash size={20} color='red'/></span> ) } </div></div> 
+             <div className='date'> <div>{formatDate(note.createdAt)} </div>  <div>{ deletingID === note._id ? (<Loader className='loader-icon-deleting' />) : (<span className='trash-icon' onClick={()=>{deleteNote(note._id)}}> <Trash size={20} color='red'/></span> ) } </div></div> 
           </div>
 
           

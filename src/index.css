@@ -87,6 +87,11 @@ body{
     align-items: center;
     gap: 4rem;
 }
+.loader-icon-deleting{
+     animation: spin 1s linear infinite;
+     
+
+}
 .loader-icon{
     margin-left: 50px;
     animation: spin 1s linear infinite;

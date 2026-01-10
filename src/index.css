@@ -20,6 +20,30 @@ body{
     background-color: rgb(46, 42, 78);
     color: white;
 }
+.user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:600px){
+   
+    .nav h1{
+        font-size: 20px;
+    }
+    .user-info h2{
+        font-size: 20px; 
+    }
+    .user-info p{
+        font-size: 12px;
+    }
+    .notes-parent{
+        border: 2px solid red;
+        justify-content: center;
+        align-items: baseline;
+    }
+    
+}
 
 .nav-link{
     color: white;
